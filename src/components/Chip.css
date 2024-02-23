@@ -1,0 +1,24 @@
+.chip {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  border-radius: 50%; /* Circular shape */
+  background-size: cover; /* Ensure the image covers the whole chip */
+  background-position: center; /* Center the background image */
+  color: white; /* Text color, adjust as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition for click effect */
+}
+
+.chip:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.chip:active {
+  transform: translateY(1px); /* Push effect when clicked */
+}
